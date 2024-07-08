@@ -1,0 +1,66 @@
+.hero{  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  padding-top: 50px;  
+}
+.hero__title{
+  font-family: 'Montaga';
+  font-size: 5rem;
+  font-weight: normal;
+  color: var(--main-color);
+}
+.hero__text{
+  margin-top: 20px;
+  font-family: 'Montagu slab';
+  color: var(--secundary-color);
+}
+.hero__text>p{  
+  font-size: 1rem;
+  font-weight: 400;
+}
+.hero__text>h2{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.call-to-action{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+.call-to-action>button{
+  width: 50%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: var(--complementary-color);
+  font-family: 'Montagu slab';
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.call-to-action>button:hover{
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.27);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.27);
+}
+.call-to-action>h2{
+  width: 50%;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'Montagu slab';  
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.hero-img{
+  flex: 1;
+  margin-top: 25px;
+  border-top: 2px solid var(--secundary-color);
+  overflow: hidden;  
+}
+.hero-img>img{
+  width: 100%;
+}

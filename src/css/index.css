@@ -1,0 +1,82 @@
+@import url(./components/header.css);
+@import url(./components/home.css);
+@import url(./components/menu.css);
+@import url(./components/about.css);
+
+@font-face {
+  font-family: 'Montaga';
+  src: url(../fonts/montaga.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Montagu slab';
+  src: url(../fonts/MontaguSlab-VariableFont_opsz\,wght.ttf) format('truetype');
+  /* font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: oblique 0deg 20deg; */
+}
+@font-face {
+  font-family: 'Poppins light';
+  src: url(../fonts/poppins-light.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Poppins regular';
+  src: url(../fonts/poppins-regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Poppins medium';
+  src: url(../fonts/poppins-medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Poppins semibold';
+  src: url(../fonts/poppins-semibold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Poppins bold';
+  src: url(../fonts/poppins-bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Poppins black';
+  src: url(../fonts/poppins-black.woff2) format('woff2');
+}
+
+:root{
+  --main-color: #006989;
+  --secundary-color: #E88D67;
+  --complementary-color: #F3F7EC;
+  --header-height: 130px;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: auto;
+  text-decoration: none;
+  list-style: none;
+}
+html{
+  background-color: var(--complementary-color);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;  
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--header-height));
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height));
+}
+.container-sm{
+  width: inherit;
+  margin: 0 20%;  
+}
+.container-lg{
+  width: inherit;
+  flex-grow: 1;
+}

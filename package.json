@@ -1,0 +1,29 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "This is my other restaurant page, but better. Like Ma's House, this is another restaurant page for practice about webpack.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ShrekBenson/restaurant-page.git"
+  },
+  "author": "Diego Antonio Angel Rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShrekBenson/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/ShrekBenson/restaurant-page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
+  }
+}

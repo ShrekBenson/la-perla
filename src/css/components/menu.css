@@ -1,0 +1,130 @@
+.presentation{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.presentation__img{
+  position: relative;
+  width: inherit;
+  height: 90%;
+  border-top: 16px solid #E88D6790;
+  background-size: cover;  
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+.slabs{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+}
+.presentation__slab{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  font-family: 'Montaga';  
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  background-color: var(--complementary-color);
+}
+.slab-1{
+  width: 200px;
+  height: 100px;
+}
+.slab-1>p{
+  font-size: 3rem;
+}
+.slab-2{
+  width: 150px;
+  height: 40px;
+}
+.slab-2>p{
+  font-size: 1rem;
+}
+.presentation__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation__text>p{
+  width: 40%;
+  text-align: center;
+  font-family: 'Montagu slab';
+  font-size: .75rem;
+  color: var(--secundary-color);
+}
+
+.menu{
+  height: 1000px;
+  padding: 50px 100px;
+  background-color: white;
+  -webkit-box-shadow: 0px 20px 20px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 20px 20px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 20px 20px 5px rgba(0,0,0,0.2);
+}
+.menu__container{
+  width: 100%;
+  height: 100%;
+  display: grid;  
+  grid-template-rows: repeat(6, 1fr);
+  border: 2px solid #00698933;
+}
+.menu__row{
+  display: flex;
+  row-gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 100px;
+  text-align: center;
+  font-family: 'Montaga';
+}
+.menu__row>h2{
+  color: var(--main-color);
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+.menu__row>p{  
+  padding: 0 100px;
+  font-size: .75rem;
+}
+.menu__row>h3{
+  display: inline;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+}
+.title{
+  padding-top: 20px;
+}
+.menu__info{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.menu__info>p{
+  padding: 0 100px;
+  font-size: .75rem;
+}
+.menu__info>p:last-child{
+  font-weight: bold;
+}
+.menu__title{
+  display: flex;
+  flex-direction: column;
+}
+.menu__title>h1{
+  color: var(--main-color);
+  font-weight: normal;
+  border-bottom: 1px solid var(--main-color);
+}
+.menu__title>h2{
+  color: var(--main-color);
+  font-family: 'Montagu slab';
+  font-weight: 300;
+}

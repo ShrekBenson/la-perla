@@ -1,0 +1,32 @@
+.tabs, .nav, .logo{
+  display: flex;
+  align-items: end;  
+}
+header{
+  height: var(--header-height);
+  padding-top: 50px;
+}
+header>.container-sm{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  cursor: pointer;
+}
+.nav{
+  width: 300px;
+  justify-content: space-evenly;
+}
+.tab{
+  font-family: 'Poppins light';
+  font-size: 1.25rem;
+  color: var(--main-color);
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+}
+.tab--login{
+  padding: 4px 16px;
+}
+.tab:hover{
+  transform: translateY(-2px);
+}
