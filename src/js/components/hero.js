@@ -1,3 +1,4 @@
+import { Menu } from '.';
 import HeroImg from '../../img/hero-img.webp';
 
 export default function hero() {
@@ -28,7 +29,7 @@ export default function hero() {
   const heroTextParagraph = document.createElement('p');
   heroTextParagraph.textContent = "Discover authentic coastal cuisine, with dishes prepared with fresh and local ingredients, come and live an unforgettable culinary experience."  
     
-  const buttonToAction = document.createElement('button');
+  const buttonToAction = document.createElement('button');  
   buttonToAction.textContent = "See our Menu!";
   const titleToAction = document.createElement('h2');
   titleToAction.textContent = "You want to order?";
@@ -37,6 +38,11 @@ export default function hero() {
   text.appendChild(heroText);
   heroText.appendChild(heroTextTitle);
   heroText.appendChild(heroTextParagraph);
+
+  buttonToAction.addEventListener('click', () => {
+    CONTENT.innerHTML = "";
+    Menu();
+  })
   
   callToAction.appendChild(titleToAction);
   callToAction.appendChild(buttonToAction);
